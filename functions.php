@@ -1,5 +1,9 @@
 <?php
 
+/*---  Support WordPress features
+*----------------------------------- */
+add_theme_support( 'automatic-feed-links' );
+
 /*---  Scripts
 *------------------------------ */
 
@@ -68,5 +72,8 @@ add_action( 'widgets_init', 'funkshun_widget_areas' );
 
 /*---   Menus
  *------------------------- */
-register_nav_menu ( 'Main menu', 'The main menu' );
-register_nav_menu ( 'Footer menu', 'The footer menu' );
+function funkshun_register_menus() {
+	register_nav_menu ( 'Main menu', 'The main menu' );
+	register_nav_menu ( 'Footer menu', 'The footer menu' );
+}
+add_action( 'after_setup_theme', 'funkshun_register_menus' );
