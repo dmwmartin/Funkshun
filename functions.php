@@ -51,18 +51,20 @@ function funkshun_excerpt($limit) {
 
 /*---  Widget areas
 *------------------------------ */
-
-$args = array(
-	'name'          => __( 'Main widget area'),
-	'id'            => 'main-sidebar',
-	'description'   => 'Widgets placed here will appear in the sidebar',
-        'class'         => '',
-	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	'after_widget'  => '</div>',
-	'before_title'  => '<h3 class="widgettitle">',
-	'after_title'   => '</h3>' );
-
-register_sidebar( $args );
+function funkshun_widget_areas () {
+	$args = array(
+		'name'          => __( 'Main widget area'),
+		'id'            => 'main-sidebar',
+		'description'   => 'Widgets placed here will appear in the sidebar',
+		'class'         => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widgettitle">',
+		'after_title'   => '</h3>' );
+	
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'funkshun_widget_areas' );
 
 /*---   Menus
  *------------------------- */
