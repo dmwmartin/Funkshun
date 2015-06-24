@@ -32,10 +32,52 @@ Body: font-family: ;
 
 */
 
-/* Reset - Eric Meyer's Reset CSS v2.0 http://cssreset.com 
---------------------------------------------------------------*/
+/* -------------------------------------------------------------------
+ * ---- 1. Reset - Eric Meyer's Reset CSS v2.0 http://cssreset.com 
+ * -------------------------------------------------------------------*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-/* WordPress Core
--------------------------------------------------------------- */
+/* -------------------------------------------------------------------
+ * ---- 2. WordPress Core 
+ * -------------------------------------------------------------------*/
 img {max-width:100%;height:auto;}.alignnone{margin:5px 20px 20px 0}.aligncenter,div.aligncenter{display:block;margin:5px auto 5px auto}.alignright{float:right;margin:5px 0 20px 20px}.alignleft{float:left;margin:5px 20px 20px 0}.aligncenter{display:block;margin:5px auto 5px auto}a img.alignright{float:right;margin:5px 0 20px 20px}a img.alignnone{margin:5px 20px 20px 0}a img.alignleft{float:left;margin:5px 20px 20px 0}a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{max-width:100%;text-align:center}.wp-caption.alignnone{margin:5px 20px 20px 0}.wp-caption.alignleft{margin:5px 20px 20px 0}.wp-caption.alignright{margin:5px 0 20px 20px}.wp-caption img{border:0 none;height:auto;margin:0;max-width:100%;padding:0;width:auto}.wp-caption p.wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:5px 0;text-align:left;}
+
+/* -------------------------------------------------------------------
+ * ---- 3. Site Structure
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 4. Typography and global styles 
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 2. WordPress Core 
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 5. Coloured blocks and dependent styles
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 6. Header
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 7. Content areas
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 8. Page Templates
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 9. Footer
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 10. Plugins (if required)
+ * -------------------------------------------------------------------*/
+ 
+ /* -------------------------------------------------------------------
+ * ---- 11. Media Queries
+ * -------------------------------------------------------------------*/
