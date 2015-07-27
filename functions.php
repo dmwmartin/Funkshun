@@ -2,7 +2,13 @@
 
 /*---  Support WordPress features
 *----------------------------------- */
-add_theme_support( 'automatic-feed-links' );
+function funkshun_theme_setup() {
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+	add_theme_support( 'post-thumbnails' );
+}
+add_action( 'after_setup_theme', 'funkshun_theme_setup' );
+
 
 /*---  Scripts
 *------------------------------ */
@@ -17,14 +23,11 @@ add_action( 'wp_enqueue_scripts', 'funkshun_load_scripts' );
 
 /*---  Featured images
 *------------------------------ */
-if ( function_exists( 'add_theme_support' ) ) {
-	add_theme_support( 'post-thumbnails' );
-        set_post_thumbnail_size( 150, 150 ); // default Post Thumbnail dimensions   
+function funkshun_image_setup() {
+    //set_post_thumbnail_size( 150, 150 ); // default Post Thumbnail dimensions  
+    //add_image_size( 'news-thumb', 220, 140, true );
 }
-
-if ( function_exists( 'add_image_size' ) ) { 
-	//add_image_size( 'news-thumb', 220, 140, true );
-}
+add_action( 'after_setup_theme', 'funkshun_image_setup' );
 
 /*---  Add options to the_excerpt
 *----------------------------------- */
