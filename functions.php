@@ -7,6 +7,43 @@ function funkshun_theme_setup() {
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 	add_theme_support( 'post-thumbnails' );
    	add_theme_support( 'title-tag' );
+	
+	// --- Gutenberg support --- 
+	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'wp-block-styles' );
+	//add_theme_support( 'align-wide' ); If you need full-width content
+	
+	/* --- Add custom colour pallette 
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => __( 'strong magenta', 'my-project' ),
+				'slug'  => 'Offwhite',
+				'color' => '#ededed',
+			),
+		)
+	);
+	
+	*/
+	
+	/* --- Add custom text sizes
+	add_theme_support(
+		'editor-font-sizes',
+		array(
+			array(
+				'name' => __( 'Small', 'my-project' ),
+				'size' => 12,
+				'slug' => 'small',
+			),
+		)
+	) */
+	
+	// add_theme_support( 'disable-custom-font-sizes' ); // Remove custom font sizes
+	// add_theme_support( 'disable-custom-colours' ); // Remove colourpicker
+	
+	// add_editor_style( 'css/editor-style.css' ); // Add a custom editor stylesheet
+	// add_theme_support( 'editor-styles' ); // Enable custom editor stylesheet
 }
 add_action( 'after_setup_theme', 'funkshun_theme_setup' );
 
